@@ -6,3 +6,7 @@ export const Not = require("./images/not.png");
 export const NotSelected = require("./images/notSelected.png");
 export const EmailSelected = require("./images/emailSelected.png");
 export const Email = require("./images/email.png");
+export const Profil = require("./images/profil.png");
+export const Twitter = require("./images/twitter.png");
+export const Shine = require("./images/shine.png");
+export const Setting = require("./images/setting.png");
