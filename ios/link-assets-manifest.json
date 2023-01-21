@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Chirp.ttf",
+      "sha1": "918d3ae6bd72d542527e45603b242c819c4b61dc"
+    },
+    {
+      "path": "src/assets/fonts/Fonts.ts",
+      "sha1": "74e0c82c29e1f14f60e59cc19ff6b235c8d7188c"
+    }
+  ]
+}
