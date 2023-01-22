@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import style from './style'
-import { Header } from '../../components'
+import { FloatingButton, Header } from '../../components'
 import { Setting } from '../../assets'
 
 export function SearchScreen() {
@@ -13,7 +13,7 @@ export function SearchScreen() {
                 iconName={Setting}
                 placeHolderText="Twitter'da Ara"
             />
-
+            <FloatingButton />
         </View>
     )
 }

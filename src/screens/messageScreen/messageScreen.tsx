@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import style from './style'
-import { Header } from '../../components'
+import { FloatingButton, Header } from '../../components'
 import { Setting } from '../../assets'
 
 export function MessageScreen() {
@@ -13,6 +13,7 @@ export function MessageScreen() {
                 iconName={Setting}
                 placeHolderText="Direkt Mesajlarda Ara"
             />
+            <FloatingButton isChoose='icon' />
         </View>
     )
 }
