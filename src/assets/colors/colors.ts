@@ -4,5 +4,6 @@ export default {
     homeBackGround: "#fff",
     textInputBackGround: "#eff3f4",
     textInputPlaceHolder: "#6d787f",
-    grey:"grey"
+    textColor: "#404549",
+    grey: "grey"
 }
