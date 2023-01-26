@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native'
 import colors from '../../assets/colors/colors'
 export default StyleSheet.create({
    container: {
-      backgroundColor: "#03a9f4",
+      backgroundColor: colors.twitterLogoColor,
       alignSelf: "flex-start",
       borderRadius: 30,
       position: "absolute",
@@ -26,7 +26,7 @@ export default StyleSheet.create({
       fontSize: 24,
       color: colors.white,
       alignSelf: "center",
-   
+
 
 
    }

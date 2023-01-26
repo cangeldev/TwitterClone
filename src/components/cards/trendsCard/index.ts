@@ -1,0 +1,1 @@
+export { TrendsCard } from "./trendsCard"
