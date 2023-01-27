@@ -7,8 +7,7 @@ export default StyleSheet.create({
    },
    trendsView: {
       paddingHorizontal: 12,
-      paddingTop: 10,
-      height: 500,
+      paddingVertical: 10,
       borderWidth: 0.6,
       borderColor: colors.textInputBackGround
    },
@@ -20,5 +19,10 @@ export default StyleSheet.create({
    moreTrendsText: {
       marginTop: 14,
       color: colors.twitterLogoColor,
+   },
+   recommendedContactsView: {
+      marginLeft: -4,
+      marginRight: -12,
+      marginBottom: 5
    }
 })

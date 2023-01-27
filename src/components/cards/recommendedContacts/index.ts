@@ -1,0 +1,1 @@
+export { RecommendedContacts } from "./recommendedContacts"

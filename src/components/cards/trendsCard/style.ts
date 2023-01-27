@@ -3,7 +3,7 @@ import colors from '../../../assets/colors/colors'
 export default StyleSheet.create({
     container: {
         paddingTop: 20,
-      
+
     },
     tag: {
         fontSize: 16,
@@ -22,8 +22,8 @@ export default StyleSheet.create({
     },
     icon: {
         position: 'absolute',
-        right:8,
-        top:"45%"     
+        right: 8,
+        top: "45%"
     }
 
 })

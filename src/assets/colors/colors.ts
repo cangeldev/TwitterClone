@@ -6,5 +6,7 @@ export default {
     textInputBackGround: "#eff3f4",
     textInputPlaceHolder: "#6d787f",
     textColor: "#404549",
-    grey: "grey"
+    grey: "grey",
+    lightGrey: "#bebebe",
+    Gainsboro: "#dcdcdc"
 }
