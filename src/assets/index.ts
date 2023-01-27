@@ -10,3 +10,4 @@ export const Profil = require("./images/profil.png");
 export const Twitter = require("./images/twitter.png");
 export const Shine = require("./images/shine.png");
 export const Setting = require("./images/setting.png");
+export const VerifiedPagesImage = require("./images/verifiedPagesImage.png");
