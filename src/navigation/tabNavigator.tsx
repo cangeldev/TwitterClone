@@ -11,6 +11,7 @@ export function TabNavigator() {
             screenOptions={{
                 headerShown: false,
                 tabBarShowLabel: false,
+                tabBarHideOnKeyboard: true
             }}>
             <Tab.Screen
                 name='HomeStackNavigator'
