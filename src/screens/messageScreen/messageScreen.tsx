@@ -1,10 +1,9 @@
-import { View, Text } from 'react-native'
+import { View, ScrollView } from 'react-native'
 import React from 'react'
 import style from './style'
 import { FloatingButton, Header } from '../../components'
 import { Setting } from '../../assets'
 import { MessageCard } from '../../components/cards'
-import { ScrollView } from 'react-native-gesture-handler'
 
 export function MessageScreen() {
     return (
@@ -14,6 +13,7 @@ export function MessageScreen() {
                 centerName={Setting}
                 iconName={Setting}
                 placeHolderText="Direkt Mesajlarda Ara"
+                go='MessageSettingsPages'
             />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <MessageCard />

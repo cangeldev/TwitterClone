@@ -5,25 +5,6 @@ export default StyleSheet.create({
         backgroundColor: colors.white,
         flex: 1
     },
-    headerView: {
-        flexDirection: "row",
-        height: 55,
-        borderBottomWidth: 0.5,
-        borderBottomColor: colors.Gainsboro,
-        alignItems: "center",
-        paddingHorizontal: 20
-    },
-    headerTextView: {
-        marginLeft: 25,
-    },
-    text: {
-        fontSize: 20,
-        color: colors.black,
-        fontWeight: "600",
-    },
-    name: {
-        color: colors.grey,
-    },
     info: {
         paddingHorizontal: 20,
         marginTop: 15,
@@ -33,16 +14,15 @@ export default StyleSheet.create({
         flexDirection: "row",
         paddingHorizontal: 20,
         alignItems: "center",
-        marginTop:25
+        marginTop: 25
     },
-    title:{
-    marginLeft:20,
-    fontSize:16,
-    color:colors.black
+    title: {
+        marginLeft: 20,
+        fontSize: 16,
+        color: colors.black
     },
-    text2:{
-        paddingHorizontal:20,
-        color:colors.grey
+    text: {
+        paddingHorizontal: 20,
+        color: colors.grey
     }
-
 })

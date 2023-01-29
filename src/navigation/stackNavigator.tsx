@@ -1,12 +1,13 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { HomeScreen, MessageScreen, NotificationScreen, SearchScreen } from '../screens'
-import { NotificationSettingsPages, SearchSettingsPages } from '../pages'
+import { MessageSettingsPages, NotificationSettingsPages, SearchSettingsPages } from '../pages'
 export type RootStackParams = {
     HomeScreen: any;
     SearchScreen: any
     SearchSettingsPages: any
     NotificationSettingsPages: any
+    MessageSettingsPages: any
     NotificationScreen: any
     MessageScreen: any
 }
@@ -50,6 +51,9 @@ export function MessageStackNavigator() {
             <Stack.Screen
                 name='MessageScreen'
                 component={MessageScreen} />
+            <Stack.Screen
+                name='MessageSettingsPages'
+                component={MessageSettingsPages} />
         </Stack.Navigator>
     )
 }

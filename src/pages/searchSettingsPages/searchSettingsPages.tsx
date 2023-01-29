@@ -1,11 +1,11 @@
-import { View, Text, Switch, TouchableOpacity } from 'react-native'
+import { View, Text, Switch } from 'react-native'
 import React, { useState } from 'react'
 import style from './style'
-import IconA from 'react-native-vector-icons/AntDesign';
 import colors from '../../assets/colors/colors';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack/lib/typescript/src/types'
 import { RootStackParams } from '../../navigation/stackNavigator'
+import { SettingsHeader } from '../../components';
 export const SearchSettingsPages = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
     const [isEnabled, setIsEnabled] = useState(true);
@@ -14,24 +14,7 @@ export const SearchSettingsPages = () => {
     const toggleSwitchPersonal = () => setIsEnabledPersonal(previousState => !previousState);
     return (
         <View style={style.container}>
-            <View style={style.headerView}>
-                <TouchableOpacity
-                    onPress={() => { navigation.navigate("SearchScreen") }}>
-                    <IconA
-                        name="arrowleft"
-                        size={24}
-                        color={colors.black}
-                    />
-                </TouchableOpacity>
-                <View style={style.headerTextView}>
-                    <Text style={style.text}>
-                        Keşfetme ayarları
-                    </Text>
-                    <Text style={style.name}>
-                        @Canqgel
-                    </Text>
-                </View>
-            </View>
+            <SettingsHeader title='Keşfetme ayarları' go='SearchScreen' />
             <View style={style.contentView}>
                 <Text style={style.title}>
                     Konum

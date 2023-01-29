@@ -6,31 +6,25 @@ export default StyleSheet.create({
         flex: 1
     },
     contentView: {
-        borderTopWidth: 0.6,
-        borderColor: colors.Gainsboro,
         paddingHorizontal: 20,
-        paddingVertical: 8,
-        paddingTop: 12
+        marginTop: 20,
     },
     title: {
         color: colors.black,
-        fontWeight: 'bold',
-        fontSize: 20
+        fontSize: 16,
+        fontWeight: "500"
     },
-    textView: {
-        flexDirection: "row",
-    },
-    infoTitle: {
-        marginTop: 25,
-        color: colors.black,
-        fontSize: 16
-    },
-    info: {
-        width: 300,
-        color: colors.grey
+    text: {
+        width: 300
     },
     switch: {
         width: 50,
         marginTop: -15,
+    },
+    view: {
+        flexDirection: "row"
+    },
+    linkText: {
+        color: colors.twitterLogoColor
     }
 })
