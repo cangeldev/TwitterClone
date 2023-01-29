@@ -13,6 +13,7 @@ export function SearchScreen() {
                 centerName={Setting}
                 iconName={Setting}
                 placeHolderText="Twitter'da Ara"
+                go='SearchSettingsPages'
             />
             <ScrollView>
                 <View style={style.trendsView}>

@@ -32,6 +32,7 @@ export const NotificationScreen = () => {
                     centerName={Setting}
                     isChoose="text"
                     iconName={Setting}
+                    go="NotificationSettingsPages"
                 />
             </View>
         </Swiper>

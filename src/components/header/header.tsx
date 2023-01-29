@@ -11,8 +11,9 @@ interface IHeaderProps {
     centerName: Image;
     iconName: string;
     placeHolderText?: string;
+    go?: string;
 }
-export const Header: FC<IHeaderProps> = ({ isChoose, centerName, iconName, placeHolderText }) => {
+export const Header: FC<IHeaderProps> = ({ isChoose, centerName, iconName, placeHolderText, go }) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
     return (
         <View style={style.container}>
@@ -36,7 +37,7 @@ export const Header: FC<IHeaderProps> = ({ isChoose, centerName, iconName, place
                             Bildirimler
                         </Text>
             }
-            <TouchableOpacity onPress={() => { navigation.navigate("SearchSettingsPages") }}>
+            <TouchableOpacity onPress={() => { navigation.navigate(go) }}>
                 <Image
                     source={iconName as any}
                     style={style.profilImage}

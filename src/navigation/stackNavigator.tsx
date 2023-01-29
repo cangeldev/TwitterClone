@@ -1,11 +1,12 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { HomeScreen, MessageScreen, NotificationScreen, SearchScreen } from '../screens'
-import { SearchSettingsPages } from '../pages'
+import { NotificationSettingsPages, SearchSettingsPages } from '../pages'
 export type RootStackParams = {
     HomeScreen: any;
     SearchScreen: any
     SearchSettingsPages: any
+    NotificationSettingsPages: any
     NotificationScreen: any
     MessageScreen: any
 }
@@ -27,7 +28,6 @@ export function SearchStackNavigator() {
                 component={SearchScreen} />
             <Stack.Screen
                 name='SearchSettingsPages'
-                options={{}}
                 component={SearchSettingsPages} />
         </Stack.Navigator>
     )
@@ -38,6 +38,9 @@ export function NotificationStackNavigator() {
             <Stack.Screen
                 name='NotificationScreen'
                 component={NotificationScreen} />
+            <Stack.Screen
+                name='NotificationSettingsPages'
+                component={NotificationSettingsPages} />
         </Stack.Navigator>
     )
 }
