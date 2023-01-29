@@ -10,6 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack/lib/typescript/src/types'
 import { RootStackParams } from '../../navigation/stackNavigator'
 import { DrawerButton } from '../drawerButton';
+
 interface ICustomDrawer { }
 export const CustomDrawer: FC<ICustomDrawer> = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
@@ -50,11 +51,11 @@ export const CustomDrawer: FC<ICustomDrawer> = () => {
                 </View>
             </View>
             <View style={style.listView}>
-                <DrawerButton text='Profil' image={UserIcon} />
-                <DrawerButton text='Konular' image={ChatIcon} />
-                <DrawerButton text=' Yer işaretleri' image={SavedIcon} />
-                <DrawerButton text=' Listeler' image={DocumentIcon} />
-                <DrawerButton text='  Twitter Çevresi' image={UserHeartIcon} />
+                <DrawerButton text='Profil' image={UserIcon} go="Profile" />
+                <DrawerButton text='Konular' image={ChatIcon} go="Topics" />
+                <DrawerButton text=' Yer işaretleri' image={SavedIcon} go="Bookmarks" />
+                <DrawerButton text=' Listeler' image={DocumentIcon} go="Lists" />
+                <DrawerButton text='  Twitter Çevresi' image={UserHeartIcon} go="Moments" />
             </View>
             <CustomDrawerCard
                 title='Profesyonel Araçlar'

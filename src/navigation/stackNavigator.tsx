@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { HomeScreen, MessageScreen, NotificationScreen, SearchScreen } from '../screens'
-import { MessageSettingsPages, NotificationSettingsPages, Profile, SearchSettingsPages } from '../pages'
+import { Bookmarks, Lists, MessageSettingsPages, Moments, NotificationSettingsPages, Profile, SearchSettingsPages, Topics } from '../pages'
 export type RootStackParams = {
     HomeScreen: any;
     SearchScreen: any
@@ -11,6 +11,10 @@ export type RootStackParams = {
     NotificationScreen: any
     MessageScreen: any
     Profile: any
+    Topics: any
+    Bookmarks: any
+    Lists: any
+    Moments: any
 }
 const Stack = createStackNavigator<RootStackParams>()
 export function HomeStackNavigator() {
@@ -58,13 +62,24 @@ export function MessageStackNavigator() {
         </Stack.Navigator>
     )
 }
-
 export function DrawerStackNavigator() {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen
                 name='Profile'
                 component={Profile} />
+            <Stack.Screen
+                name='Topics'
+                component={Topics} />
+            <Stack.Screen
+                name='Bookmarks'
+                component={Bookmarks} />
+            <Stack.Screen
+                name='Lists'
+                component={Lists} />
+            <Stack.Screen
+                name='Moments'
+                component={Moments} />
         </Stack.Navigator>
     )
 }
