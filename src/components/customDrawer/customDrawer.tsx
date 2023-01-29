@@ -6,20 +6,25 @@ import IconM from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconE from 'react-native-vector-icons/Entypo';
 import colors from '../../assets/colors/colors';
 import { CustomDrawerCard } from '../cards/customDrawerCard/customDrawerCard';
-
+import { useNavigation } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack/lib/typescript/src/types'
+import { RootStackParams } from '../../navigation/stackNavigator'
 interface ICustomDrawer { }
 export const CustomDrawer: FC<ICustomDrawer> = () => {
+    const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
     return (
         <View style={style.container}>
             <View style={style.headerView}>
-                <Image source={Profil} style={style.image} />
+                <TouchableOpacity onPress={() => { navigation.navigate("Profile") }}>
+                    <Image source={Profil} style={style.image} />
+                </TouchableOpacity>
                 <IconM
                     name="dots-vertical-circle-outline"
                     size={24}
                     color={colors.black}
                 />
             </View>
-            <Text style={style.name}>
+            <Text style={style.name} >
                 Can
             </Text>
             <Text style={style.username}>

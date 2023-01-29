@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { HomeScreen, MessageScreen, NotificationScreen, SearchScreen } from '../screens'
-import { MessageSettingsPages, NotificationSettingsPages, SearchSettingsPages } from '../pages'
+import { MessageSettingsPages, NotificationSettingsPages, Profile, SearchSettingsPages } from '../pages'
 export type RootStackParams = {
     HomeScreen: any;
     SearchScreen: any
@@ -10,6 +10,7 @@ export type RootStackParams = {
     MessageSettingsPages: any
     NotificationScreen: any
     MessageScreen: any
+    Profile: any
 }
 const Stack = createStackNavigator<RootStackParams>()
 export function HomeStackNavigator() {
@@ -54,6 +55,16 @@ export function MessageStackNavigator() {
             <Stack.Screen
                 name='MessageSettingsPages'
                 component={MessageSettingsPages} />
+        </Stack.Navigator>
+    )
+}
+
+export function DrawerStackNavigator() {
+    return (
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+                name='Profile'
+                component={Profile} />
         </Stack.Navigator>
     )
 }
