@@ -1,13 +1,13 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import style from './style'
-import colors from '../../assets/colors/colors'
+import colors from '../../../assets/colors/colors'
 import IconM from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconF from 'react-native-vector-icons/FontAwesome5';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParams } from '../../navigation/stackNavigator';
-import { SettingsHeader } from '../../components';
+import { RootStackParams } from '../../../navigation/stackNavigator';
+import { SettingsHeader } from '../../../components';
 
 export const NotificationSettingsPages = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>()

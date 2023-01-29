@@ -1,8 +1,8 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
 import style from './style'
-import { FloatingButton } from '../../components'
-import { VerifiedPagesImage } from '../../assets'
+import { FloatingButton } from '../../../components'
+import { VerifiedPagesImage } from '../../../assets'
 
 export const NotificationVerifiedPages = () => {
     return (

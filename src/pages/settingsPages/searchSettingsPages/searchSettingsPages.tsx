@@ -1,11 +1,11 @@
 import { View, Text, Switch } from 'react-native'
 import React, { useState } from 'react'
 import style from './style'
-import colors from '../../assets/colors/colors';
+import colors from '../../../assets/colors/colors';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack/lib/typescript/src/types'
-import { RootStackParams } from '../../navigation/stackNavigator'
-import { SettingsHeader } from '../../components';
+import { RootStackParams } from '../../../navigation/stackNavigator'
+import { SettingsHeader } from '../../../components';
 export const SearchSettingsPages = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
     const [isEnabled, setIsEnabled] = useState(true);

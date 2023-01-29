@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import { FloatingButton } from '../../components'
+import { FloatingButton } from '../../../components'
 import style from './style'
 
 export const NotificationAllPages = () => {

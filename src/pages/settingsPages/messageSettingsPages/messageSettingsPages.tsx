@@ -1,8 +1,8 @@
 import { View, Text, Switch } from 'react-native'
 import React, { useState } from 'react'
-import { SettingsHeader } from '../../components'
+import { SettingsHeader } from '../../../components'
 import style from './style'
-import colors from '../../assets/colors/colors'
+import colors from '../../../assets/colors/colors'
 
 export const MessageSettingsPages = () => {
     const [isEnabled, setIsEnabled] = useState(true);
