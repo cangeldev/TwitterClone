@@ -5,8 +5,7 @@ export default StyleSheet.create({
         backgroundColor: colors.homeBackGround,
         flex: 1,
         paddingTop: 25,
-        paddingHorizontal: 30,
-
+        paddingHorizontal: 30
     },
     image: {
         width: 45,
@@ -45,21 +44,6 @@ export default StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: colors.Gainsboro,
         marginBottom: 15
-    },
-    customButton: {
-        flexDirection: "row",
-        height: 50,
-        alignItems: "center"
-    },
-    customButtonIcon: {
-        width: 20,
-        height: 20
-    },
-    customButtonText: {
-        fontSize: 22,
-        fontWeight: "bold",
-        color: colors.black,
-        marginLeft: 25
     },
     lightIcon: {
         left: 30,

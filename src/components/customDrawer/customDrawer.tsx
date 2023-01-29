@@ -9,6 +9,7 @@ import { CustomDrawerCard } from '../cards/customDrawerCard/customDrawerCard';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack/lib/typescript/src/types'
 import { RootStackParams } from '../../navigation/stackNavigator'
+import { DrawerButton } from '../drawerButton';
 interface ICustomDrawer { }
 export const CustomDrawer: FC<ICustomDrawer> = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
@@ -49,51 +50,11 @@ export const CustomDrawer: FC<ICustomDrawer> = () => {
                 </View>
             </View>
             <View style={style.listView}>
-                <TouchableOpacity style={style.customButton}>
-                    <Image
-                        source={UserIcon}
-                        style={style.customButtonIcon}
-                    />
-                    <Text style={style.customButtonText} >
-                        Profil
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.customButton}>
-                    <Image
-                        source={ChatIcon}
-                        style={style.customButtonIcon}
-                    />
-                    <Text style={style.customButtonText} >
-                        Konular
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.customButton}>
-                    <Image
-                        source={SavedIcon}
-                        style={style.customButtonIcon}
-                    />
-                    <Text style={style.customButtonText} >
-                        Yer işaretleri
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.customButton}>
-                    <Image
-                        source={DocumentIcon}
-                        style={style.customButtonIcon}
-                    />
-                    <Text style={style.customButtonText} >
-                        Listeler
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.customButton}>
-                    <Image
-                        source={UserHeartIcon}
-                        style={style.customButtonIcon}
-                    />
-                    <Text style={style.customButtonText} >
-                        Twitter Çevresi
-                    </Text>
-                </TouchableOpacity>
+                <DrawerButton text='Profil' image={UserIcon} />
+                <DrawerButton text='Konular' image={ChatIcon} />
+                <DrawerButton text=' Yer işaretleri' image={SavedIcon} />
+                <DrawerButton text=' Listeler' image={DocumentIcon} />
+                <DrawerButton text='  Twitter Çevresi' image={UserHeartIcon} />
             </View>
             <CustomDrawerCard
                 title='Profesyonel Araçlar'
