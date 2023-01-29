@@ -1,3 +1,6 @@
 export { NotificationAllPages } from "./notificationAllPages/index"
 export { NotificationMentionsPages } from "./notificationMentionsPages/index"
 export { NotificationVerifiedPages } from "./notificationVerifiedPages/index"
+export { MessageSettingsPages } from "./messageSettingsPages/index"
+export { NotificationSettingsPages } from "./notificationSettingsPages/index"
+export { SearchSettingsPages } from "./searchSettingsPages/index"

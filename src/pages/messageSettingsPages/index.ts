@@ -1,0 +1,1 @@
+export { MessageSettingsPages } from "./messageSettingsPages"

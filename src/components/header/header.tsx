@@ -1,9 +1,11 @@
-import { View, Text, Image, TextInput } from 'react-native'
+import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native'
 import React, { FC } from 'react'
 import style from './style'
 import { Profil } from '../../assets'
 import colors from '../../assets/colors/colors'
-
+import { useNavigation } from '@react-navigation/native'
+import { StackNavigationProp } from '@react-navigation/stack/lib/typescript/src/types'
+import { RootStackParams } from '../../navigation/stackNavigator'
 interface IHeaderProps {
     isChoose: string;
     centerName: Image;
@@ -11,6 +13,7 @@ interface IHeaderProps {
     placeHolderText?: string;
 }
 export const Header: FC<IHeaderProps> = ({ isChoose, centerName, iconName, placeHolderText }) => {
+    const navigation = useNavigation<StackNavigationProp<RootStackParams>>();
     return (
         <View style={style.container}>
             <Image
@@ -33,10 +36,12 @@ export const Header: FC<IHeaderProps> = ({ isChoose, centerName, iconName, place
                             Bildirimler
                         </Text>
             }
-            <Image
-                source={iconName as any}
-                style={style.profilImage}
-            />
+            <TouchableOpacity onPress={() => { navigation.navigate("SearchSettingsPages") }}>
+                <Image
+                    source={iconName as any}
+                    style={style.profilImage}
+                />
+            </TouchableOpacity>
         </View>
     )
 }

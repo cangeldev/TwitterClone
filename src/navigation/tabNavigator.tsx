@@ -1,14 +1,20 @@
 import { Image } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { HomeScreen, MessageScreen, NotificationScreen, SearchScreen } from '../screens'
 import { Email, EmailSelected, Home, HomeSelected, Not, NotSelected, Searh, SearhSelected } from '../assets'
+import { HomeStackNavigator, MessageStackNavigator, NotificationStackNavigator, SearchStackNavigator } from './stackNavigator'
 export function TabNavigator() {
 
     const Tab = createBottomTabNavigator()
     return (
-        <Tab.Navigator screenOptions={{ headerShown: false, tabBarShowLabel: false, }}>
-            <Tab.Screen name='HomeScreen' component={HomeScreen}
+        <Tab.Navigator
+            screenOptions={{
+                headerShown: false,
+                tabBarShowLabel: false,
+            }}>
+            <Tab.Screen
+                name='HomeStackNavigator'
+                component={HomeStackNavigator}
                 options={{
                     tabBarIcon: ({ focused }) => focused ?
                         <Image
@@ -16,18 +22,17 @@ export function TabNavigator() {
                             style={{
                                 width: 24,
                                 height: 24,
-
                             }} /> :
                         <Image
                             source={Home}
                             style={{
                                 width: 24,
                                 height: 24,
-
                             }} />,
-
                 }} />
-            <Tab.Screen name='SearchScreen' component={SearchScreen}
+            <Tab.Screen
+                name='SearchStackNavigator'
+                component={SearchStackNavigator}
                 options={{
                     tabBarIcon: ({ focused }) => focused ?
                         <Image
@@ -35,19 +40,19 @@ export function TabNavigator() {
                             style={{
                                 width: 30,
                                 height: 30,
-
                             }} /> :
                         <Image
                             source={Searh}
                             style={{
                                 width: 30,
                                 height: 30,
-
                             }} />,
+                    // tabBarStyle: { display: "none" },
                 }}
-
             />
-            <Tab.Screen name='NotificationScreen' component={NotificationScreen}
+            <Tab.Screen
+                name='NotificationStackNavigator'
+                component={NotificationStackNavigator}
                 options={{
                     tabBarIcon: ({ focused }) => focused ?
                         <Image
@@ -55,17 +60,17 @@ export function TabNavigator() {
                             style={{
                                 width: 26,
                                 height: 26,
-
                             }} /> :
                         <Image
                             source={Not}
                             style={{
                                 width: 26,
                                 height: 26,
-
                             }} />,
                 }} />
-            <Tab.Screen name='MessageScreen' component={MessageScreen}
+            <Tab.Screen
+                name='MessageStackNavigator'
+                component={MessageStackNavigator}
                 options={{
                     tabBarIcon: ({ focused }) => focused ?
                         <Image
@@ -73,14 +78,12 @@ export function TabNavigator() {
                             style={{
                                 width: 26,
                                 height: 26,
-
                             }} /> :
                         <Image
                             source={Email}
                             style={{
                                 width: 26,
                                 height: 26,
-
                             }} />,
                 }} />
         </Tab.Navigator>
