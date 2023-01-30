@@ -26,7 +26,7 @@ export default StyleSheet.create({
       fontSize: 16,
       position: 'absolute',
       bottom: 0,
-      right: 72,
+      right: 68,
       color: colors.twitterLogoColor
    }
 
