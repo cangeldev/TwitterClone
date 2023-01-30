@@ -14,7 +14,11 @@ export default StyleSheet.create({
         fontWeight: '600',
         fontSize: 20,
         color: colors.black,
-        marginLeft:30
-
+        marginLeft: 30
+    },
+    dotIcon: {
+        position: 'absolute',
+        right: 12,
+        color: colors.darkGrey
     }
 })

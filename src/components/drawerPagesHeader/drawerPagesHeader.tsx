@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import React, { FC } from 'react'
 import style from './style'
 import IconA from 'react-native-vector-icons/AntDesign';
+import IconE from 'react-native-vector-icons/Entypo';
 import colors from '../../assets/colors/colors';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -27,6 +28,13 @@ export const DrawerPagesHeader: FC<IDrawerPagesHeader> = ({ title }) => {
             <Text style={style.title}>
                 {title}
             </Text>
+            <View style={style.dotIcon}>
+                <IconE
+                    name="dots-three-vertical"
+                    size={18}
+                    color={colors.grey}
+                />
+            </View>
         </View>
     )
 }
