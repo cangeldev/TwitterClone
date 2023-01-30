@@ -31,7 +31,8 @@ export default StyleSheet.create({
         marginTop: 3
     },
     following: {
-        color: colors.black
+        color: colors.black,
+        fontWeight: "bold"
     },
     followers: {
         marginRight: 10,

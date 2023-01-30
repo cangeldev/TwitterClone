@@ -8,5 +8,6 @@ export default {
     textColor: "#404549",
     grey: "grey",
     lightGrey: "#bebebe",
-    Gainsboro: "#dcdcdc"
+    Gainsboro: "#dcdcdc",
+    darkGrey: "#3B444B",
 }
