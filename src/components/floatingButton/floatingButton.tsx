@@ -4,7 +4,7 @@ import style from './style'
 
 import IconM from 'react-native-vector-icons/MaterialCommunityIcons';
 interface IFloatingProps {
-    iconName: string
+    iconName?: string
 }
 export const FloatingButton: FC<IFloatingProps> = ({ iconName }) => {
     return (

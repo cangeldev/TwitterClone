@@ -18,3 +18,4 @@ export const DocumentIcon = require("./images/documentIcon.png");
 export const UserHeartIcon = require("./images/userHeartIcon.png");
 export const DotMenu = require("./images/dotMenu.png");
 export const Back = require("./images/back.png");
+export const BookmarksPng = require("./images/bookmarksPng.png")
