@@ -4,22 +4,22 @@ import style from './style'
 
 import IconM from 'react-native-vector-icons/MaterialCommunityIcons';
 interface IFloatingProps {
-    isChoose?: string;
+    iconName: string
 }
-export const FloatingButton: FC<IFloatingProps> = ({ isChoose }) => {
+export const FloatingButton: FC<IFloatingProps> = ({ iconName }) => {
     return (
         <TouchableOpacity style={style.container}>
             {
-                isChoose == "icon" ?
-                    <IconM
-                        name="email-plus-outline"
-                        style={style.icon}
-                    />
-                    : <Text style={style.text}>
+                iconName == null ?
+                    <Text style={style.text}>
                         +
                     </Text>
+                    :
+                    <IconM
+                        name={iconName}
+                        style={style.icon}
+                    />
             }
         </TouchableOpacity >
-
     )
 }

@@ -8,14 +8,13 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParams } from "../../navigation/stackNavigator"
 interface ISettingsHeader {
     title: string,
-    go: string
 }
-export const SettingsHeader: FC<ISettingsHeader> = ({ title, go }) => {
+export const SettingsHeader: FC<ISettingsHeader> = ({ title }) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>()
     return (
         <View style={style.headerView}>
             <TouchableOpacity
-                onPress={() => { navigation.navigate(go) }}>
+                onPress={() => { navigation.goBack() }}>
                 <IconA
                     name="arrowleft"
                     size={24}

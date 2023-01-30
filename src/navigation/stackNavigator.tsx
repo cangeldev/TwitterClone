@@ -62,24 +62,24 @@ export function MessageStackNavigator() {
         </Stack.Navigator>
     )
 }
-export function DrawerStackNavigator() {
-    return (
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen
-                name='Profile'
-                component={Profile} />
-            <Stack.Screen
-                name='Topics'
-                component={Topics} />
-            <Stack.Screen
-                name='Bookmarks'
-                component={Bookmarks} />
-            <Stack.Screen
-                name='Lists'
-                component={Lists} />
-            <Stack.Screen
-                name='Moments'
-                component={Moments} />
-        </Stack.Navigator>
-    )
-}
+// export function DrawerStackNavigator() {
+//     return (
+//         <Stack.Navigator screenOptions={{ headerShown: false }}>
+//             <Stack.Screen
+//                 name='Profile'
+//                 component={Profile} />
+//             <Stack.Screen
+//                 name='Topics'
+//                 component={Topics} />
+//             <Stack.Screen
+//                 name='Bookmarks'
+//                 component={Bookmarks} />
+//             <Stack.Screen
+//                 name='Lists'
+//                 component={Lists} />
+//             <Stack.Screen
+//                 name='Moments'
+//                 component={Moments} />
+//         </Stack.Navigator>
+//     )
+// }

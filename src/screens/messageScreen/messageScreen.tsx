@@ -18,7 +18,9 @@ export function MessageScreen() {
             <ScrollView showsVerticalScrollIndicator={false}>
                 <MessageCard />
             </ScrollView>
-            <FloatingButton isChoose='icon' />
+            <FloatingButton
+                iconName='email-plus-outline'
+            />
         </View>
     )
 }
