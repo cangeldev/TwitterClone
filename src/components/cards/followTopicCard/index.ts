@@ -1,0 +1,1 @@
+export { FollowTopicCard } from "./followTopicCard"
