@@ -1,10 +1,14 @@
 import { View, Text, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import colors from '../../../assets/colors/colors'
 import style from './style'
 import IconF from 'react-native-vector-icons/FontAwesome';
 
 export const FollowTopicCard = () => {
+    const [handle, setHandle] = useState("Takip ediliyor")
+    const handleButton = () => {
+        handle == "Takip ediliyor" ? setHandle("Takip et") : setHandle("Takip ediliyor")
+    }
     return (
         <View style={style.container}>
             <View style={style.innerContainer}>
@@ -23,9 +27,9 @@ export const FollowTopicCard = () => {
                     </Text>
                 </View>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleButton}>
                 <Text style={style.followButton}>
-                    Takip ediliyor
+                   {handle}
                 </Text>
             </TouchableOpacity>
         </View>

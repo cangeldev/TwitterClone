@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import style from './style'
-import { FollowTopicCard } from '../../../../components/cards';
+import { FollowTopicCard, TopicCard } from '../../../../components/cards';
 export const FollowingPages = () => {
     return (
         <View style={style.container}>
@@ -12,14 +12,18 @@ export const FollowingPages = () => {
             </View>
             <View style={style.followTopics}>
                 <FollowTopicCard />
+                <FollowTopicCard />
             </View>
-            <View>
-                <Text style={style.deneme1}>
+            <View style={style.recommendedTopicView}>
+                <Text style={style.recommendedTopicTitle}>
                     Tavsiye Edilen Konular
                 </Text>
-                <Text>
-                    Bunlar hakkındaki popüler
+                <Text style={style.recommendedTopicText}>
+                    Bunlar hakkındaki popüler Tweetleri Ana Sayfa zaman akışında görürsün
                 </Text>
+                <View style={style.topicView}>
+                    <TopicCard />
+                </View>
             </View>
         </View>
     )

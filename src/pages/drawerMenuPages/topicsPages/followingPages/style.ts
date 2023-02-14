@@ -16,12 +16,21 @@ export default StyleSheet.create({
       borderBottomWidth: 0.8,
       borderColor: colors.Gainsboro
    },
-
-   deneme1: {
-      fontWeight: "bold",
-      color: colors.textColor,
+   recommendedTopicView:{
       paddingHorizontal: 10,
+      paddingVertical:10
+   },
+   recommendedTopicTitle: {
+      fontWeight: "bold",
+      color: colors.textColor,     
       fontSize: 20
+   },
+   recommendedTopicText:{
+      fontSize:13,
+      marginTop:-2      
+   },
+   topicView:{
+   
    }
 
 })
