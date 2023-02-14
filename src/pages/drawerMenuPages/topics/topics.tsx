@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 import React from 'react'
 import style from './style'
 import { DrawerPagesHeader } from '../../../components'
-
 import Swiper from "react-native-screens-swiper"
 import { FollowingPages, NotRecommendedPages, RecommendedPages } from '../topicsPages'
+
 const data = [
     {
         tabLabel: 'Takip Edilenler',
@@ -19,6 +19,7 @@ const data = [
         component: NotRecommendedPages,
     }
 ];
+
 export const Topics = () => {
     return (
         <Swiper

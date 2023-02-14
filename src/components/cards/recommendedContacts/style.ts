@@ -1,6 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native'
 import colors from '../../../assets/colors/colors'
 const windowWidth = Dimensions.get('window').width;
+
 export default StyleSheet.create({
     container: {
         width: windowWidth / 2.5,
@@ -54,8 +55,8 @@ export default StyleSheet.create({
     iconClose: {
         position: 'absolute',
         right: 10,
-        top:10,
-        fontSize:15,
-        color:"#dcdcdc"
+        top: 10,
+        fontSize: 15,
+        color: colors.Gainsboro
     }
 })

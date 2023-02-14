@@ -5,5 +5,4 @@ export default StyleSheet.create({
       backgroundColor: colors.homeBackGround,
       height: 613,
    },
-
 })

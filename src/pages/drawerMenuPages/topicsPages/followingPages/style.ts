@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 import colors from '../../../../assets/colors/colors'
+
 export default StyleSheet.create({
    container: {
       backgroundColor: colors.homeBackGround,
@@ -19,9 +20,9 @@ export default StyleSheet.create({
    recommendedTopicView: {
       paddingHorizontal: 10,
       paddingVertical: 10,
-      borderBottomWidth:0.7,
-      borderColor:colors.Gainsboro,
-      marginBottom:15
+      borderBottomWidth: 0.7,
+      borderColor: colors.Gainsboro,
+      marginBottom: 15
    },
    recommendedTopicTitle: {
       fontWeight: "bold",
@@ -29,7 +30,7 @@ export default StyleSheet.create({
       fontSize: 20
    },
    recommendedTopicText: {
-      fontSize: 13,    
+      fontSize: 13,
    },
    topicView: {
       marginVertical: 10
@@ -46,6 +47,5 @@ export default StyleSheet.create({
    },
    innerText: {
       color: colors.twitterLogoColor,
-
    }
 })

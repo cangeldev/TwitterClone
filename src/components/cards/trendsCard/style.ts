@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native'
 import colors from '../../../assets/colors/colors'
+
 export default StyleSheet.create({
     container: {
         paddingTop: 20,
-
     },
     tag: {
         fontSize: 16,
@@ -25,5 +25,4 @@ export default StyleSheet.create({
         right: 8,
         top: "45%"
     }
-
 })

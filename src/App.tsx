@@ -4,9 +4,12 @@ import Container from './container/container'
 
 export default function App() {
   return (
-    <View style={{flex:1}}>
+    <View style={{ flex: 1 }}>
       <Container />
-      <StatusBar barStyle="dark-content" backgroundColor="white" />
+      <StatusBar
+        barStyle="dark-content"
+        backgroundColor="white"
+      />
     </View>
   )
 }

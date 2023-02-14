@@ -26,8 +26,5 @@ export default StyleSheet.create({
       fontSize: 24,
       color: colors.white,
       alignSelf: "center",
-
-
-
    }
 })

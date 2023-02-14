@@ -8,7 +8,6 @@ export default StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 15,
         alignItems: "center",
-
     },
     followButton: {
         borderWidth: 0.5,
@@ -21,7 +20,6 @@ export default StyleSheet.create({
         color: colors.textColor,
         width: 130,
         textAlign: "center"
-
     },
     icon: {
         backgroundColor: colors.twitterLogoColor,

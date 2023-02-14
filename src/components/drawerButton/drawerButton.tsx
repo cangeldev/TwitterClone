@@ -9,6 +9,7 @@ interface IDrawerButton {
     image: Image
     go: string
 }
+
 export const DrawerButton: FC<IDrawerButton> = ({ text, image, go }) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>()
     return (

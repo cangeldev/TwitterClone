@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 import colors from '../../assets/colors/colors'
+
 export default StyleSheet.create({
    container: {
       backgroundColor: colors.white,
@@ -12,7 +13,6 @@ export default StyleSheet.create({
       color: 'grey',
       fontWeight: 'bold',
       fontSize: 16,
-     
    },
    activeLabel: {
       color: colors.black,

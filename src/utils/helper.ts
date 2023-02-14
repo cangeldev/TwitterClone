@@ -39,7 +39,7 @@ export const topicList = [
         id: 10,
         topic: "Hava durumu"
     },
-  
+
     {
         id: 11,
         topic: "Müzik"
@@ -55,5 +55,5 @@ export const topicList = [
     {
         id: 14,
         topic: "Disney"
-    },    
+    },
 ]

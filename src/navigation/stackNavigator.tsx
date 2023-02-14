@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { HomeScreen, MessageScreen, NotificationScreen, SearchScreen } from '../screens'
-import { Bookmarks, Lists, MessageSettingsPages, Moments, NotificationSettingsPages, Profile, SearchSettingsPages, Topics } from '../pages'
+import { MessageSettingsPages, NotificationSettingsPages, SearchSettingsPages } from '../pages'
 export type RootStackParams = {
     HomeScreen: any;
     SearchScreen: any

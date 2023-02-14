@@ -45,10 +45,6 @@ export const FollowingPages = () => {
                     daha fazla bilgi alabilirsin.
                 </Text>
             </Text>
-
-
-
-
         </View>
     )
 }

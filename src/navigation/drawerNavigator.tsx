@@ -3,7 +3,9 @@ import { createDrawerNavigator } from '@react-navigation/drawer'
 import { TabNavigator } from './tabNavigator'
 import { CustomDrawer } from '../components/customDrawer/customDrawer'
 import { Bookmarks, Lists, Moments, Profile, Topics } from '../pages'
+
 const Drawer = createDrawerNavigator()
+
 export function DrawerNavigator() {
     return (
         <Drawer.Navigator

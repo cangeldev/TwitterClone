@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 import colors from '../../../assets/colors/colors'
+
 export default StyleSheet.create({
    container: {
       backgroundColor: colors.homeBackGround,
@@ -11,7 +12,7 @@ export default StyleSheet.create({
       resizeMode: 'cover',
       height: 150,
       width: "100%",
-      marginTop:-10
+      marginTop: -10
    },
    title: {
       fontSize: 33,
@@ -30,5 +31,4 @@ export default StyleSheet.create({
       right: 72,
       color: colors.twitterLogoColor
    }
-
 })

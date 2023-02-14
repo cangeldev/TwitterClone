@@ -8,9 +8,16 @@ import IconA from 'react-native-vector-icons/AntDesign';
 export const RecommendedContacts = () => {
     return (
         <View style={style.container}>
-            <Image source={Profil} style={style.image} />
-            <Text style={style.name}>Kitap Alıntıları</Text>
-            <Text style={style.username}>@binkitapalinti</Text>
+            <Image
+                source={Profil}
+                style={style.image}
+            />
+            <Text style={style.name}>
+                Kitap Alıntıları
+            </Text>
+            <Text style={style.username}>
+                @binkitapalinti
+            </Text>
             <TouchableOpacity>
                 <Text style={style.button}>
                     Takip et

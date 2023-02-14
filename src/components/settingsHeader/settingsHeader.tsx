@@ -6,9 +6,11 @@ import { useNavigation } from '@react-navigation/native';
 import colors from '../../assets/colors/colors';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParams } from "../../navigation/stackNavigator"
+
 interface ISettingsHeader {
     title: string,
 }
+
 export const SettingsHeader: FC<ISettingsHeader> = ({ title }) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParams>>()
     return (
