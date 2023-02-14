@@ -10,13 +10,15 @@ export default StyleSheet.create({
         alignSelf: "flex-start",
         paddingHorizontal: 15,
         borderWidth:1,
-        borderColor:colors.textInputBackGround
+        borderColor:colors.textInputBackGround,
+        marginVertical:4,
+        marginRight:5
     },
     buttonText: {
         fontSize:17,
         color:colors.textColor,
         fontWeight:"bold",
-        marginRight: 8,
+        marginRight: 10,
     },
     divider: {
         marginHorizontal: 10,

@@ -16,21 +16,36 @@ export default StyleSheet.create({
       borderBottomWidth: 0.8,
       borderColor: colors.Gainsboro
    },
-   recommendedTopicView:{
+   recommendedTopicView: {
       paddingHorizontal: 10,
-      paddingVertical:10
+      paddingVertical: 10,
+      borderBottomWidth:0.7,
+      borderColor:colors.Gainsboro,
+      marginBottom:15
    },
    recommendedTopicTitle: {
       fontWeight: "bold",
-      color: colors.textColor,     
+      color: colors.textColor,
       fontSize: 20
    },
-   recommendedTopicText:{
-      fontSize:13,
-      marginTop:-2      
+   recommendedTopicText: {
+      fontSize: 13,    
    },
-   topicView:{
-   
-   }
+   topicView: {
+      marginVertical: 10
+   },
+   text: {
+      alignSelf: "center",
+      paddingHorizontal: 40,
+      marginBottom: 20
+   },
+   moreTopicText: {
+      marginLeft: 10,
+      fontWeight: "bold",
+      color: colors.twitterLogoColor,
+   },
+   innerText: {
+      color: colors.twitterLogoColor,
 
+   }
 })
